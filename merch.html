@@ -13,23 +13,21 @@
     <link rel = "stylesheet" href = "style_shop.css">
 </head>
 <body>
-    <header>
-        <!-- <div class="logo">
-        <a href = "index.html"><img id = "logo" src = "Images/logo.png"> </a>
-    </div> -->
-    <h1 id = "txtlogo1"> MARVEL </h1>
-    <nav>
-        <a href="index.html">Home</a></li>
-            <a href="characters.html">Characters</a></li>
-            <a href="movies.html">Movies & TV shows</a></li>
-            <a href="news.html">News</a></li>
-            <a href="merch.html">Shop</a></li>
-            <a href="user.html">User Zone</a></li>
-            
-        
-        <span style = "left:500px; width:120px;"></span>
-    </nav>
-    </header>
+  <nav class="navbar">
+    <!-- <div class="logo">Marvel Fans</div> -->
+    <a href = "index.html" style = "text-decoration: none;"> <h1 id = "txtlogo1"> MARVEL </h1> </a>
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    <img src = "Images/n1.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <img src = "Images/n2.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <img src = "Images/n3.png" class = "d-inline-block" alt = "Boy with book" style="width:100px;">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="merch.html">Shop</a></li>
+        <li><a href="user.html">User Zone</a></li>
+    </ul>
+</nav>
     <main>
         <button class="tablink" onclick="openPage('Toys', this, 'red')" id="defaultOpen">Toys</button>
         <button class="tablink" onclick="openPage('Clothing', this, 'green')">Clothing</button>
@@ -194,25 +192,29 @@
 
     </main>
 
-    <footer>
-        <div class = "row">
-            <div class = "col-md-4 text-align = left">
-                    <p>Designed by Sivasankari Ramalingam</a></p>
-            </div>
-            <div class = "col-md-4 text-center">
-                <p> &copy; 2024 Marvel fan site. All rights reserved.</p>
-            </div>
-            <div class = "col-md-4 d-flex justify-content-end">
-        <div class="social-media">
-            <a href="https://www.facebook.com/marvelstudios"><img src = "Images/Social media/facebook.svg" style="height:40px; width:40px;"></a>
-            <a href="https://x.com/marvel"><img src = "Images/Social media/twitter.svg" style="height:40px; width:40px;"></a>
-            <a href="https://www.instagram.com/marvel/"><img src = "Images/Social media/instagram.svg" style="height:40px; width:40px;"></a>
-            <a href="https://www.youtube.com/marvel"><img src = "Images/Social media/youtube.svg" style="height:40px; width:40px;"></i></a>
-        </div>
-        </div>
-        
-    </div>
-    </footer>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-about">
+              <h3>Designed by Sivasankari Ramalingam </h3>
+              <p>A website for all Marvel enthusiasts to connect and explore the universe of heroes, comics, and movies!</p>
+          </div>
+          <div style = "display:inline;">
+              <p>&copy; 2024 Marvel Fans. All Rights Reserved.</p>
+          </div>
+          <div class="footer-social">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/marvelstudios" target="_blank" class="social-icon"><img src = "Images/footer/facebook.svg" style="height:30px; width:30px;"></a>
+                  <a href="https://x.com/marvel" target="_blank" class="social-icon"><img src = "Images/Social media/twitter.svg" style="height:30px; width:30px;"></a>
+                  <a href="https://www.instagram.com/marvel/" target="_blank" class="social-icon"><img src = "Images/Social media/instagram.svg" style="height:30px; width:30px;"></a>
+                  <a href="https://www.youtube.com/marvel" target="_blank" class="social-icon"><img src = "Images/Social media/youtube.svg" style="height:30px; width:30px;"></a>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="footer-bottom">
+          <p>&copy; 2024 Marvel Fans. All Rights Reserved.</p>
+      </div> -->
+  </footer>
 
     <script src = "shop.js"></script>
 </body>

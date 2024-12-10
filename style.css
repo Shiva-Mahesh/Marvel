@@ -329,3 +329,23 @@ div.social-media a:hover{
         color: white;
         text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff0000, 0px 0px 80px#ff0000;
     }
+
+    .quiz-container {
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .question {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    #result {
+        margin-top: 20px;
+        font-size: 18px;
+    }
