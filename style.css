@@ -12,6 +12,7 @@ body{
     align-items: center;*/
 min-height: 100vh;
 background-color: black;
+font-family: 'Space Grotesk', 'Roboto', 'Oswald';
 }
 
 header{
@@ -86,50 +87,12 @@ nav a:nth-child(6):hover~span{
 }
 #logo{
     width:200px;
-    height:100px;
+    height:200px;
     
 }
-
-/* #characters{
-    /* display: grid; 
-    display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content:space-between;
-     align-items: center;
-     height: 300px;
-     /*width: 400px;
- }*/
- 
-  /* .charset{
-     width:80%;
-    /* height:300px;
-     flex: 33.33%;
-     align-self: flex-start;
-     height: 40%;
-     width: 50%;
-     padding: 0px 10px;
-     background-color: greenyellow;
-     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
- } */
   
- /*.charset img{
-     max-width:100%;
-     max-height:100%;
-     /*display: flex;
-     flex-direction: row;
-     object-fit:cover;
- }*/
+ 
 
-/*.charimages{
-    height: 400px;
-    width:400px;
-}*/
-
- /*.charset:hover img{
-     transform: scale(1.1);
- }*/
 
  .charname{
     text-align:center;
@@ -236,16 +199,16 @@ div.desc{
 }
 
 footer{
-    /*position: fixed;*/
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #222;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
 }
 
-div.social-media{
+/* div.social-media{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -253,9 +216,9 @@ div.social-media{
     padding: 10px;
     background-color: #222;
     color:black;
-}
+} */
 
-div.social-media a{
+/* div.social-media a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,10 +227,11 @@ div.social-media a{
     border-radius: 50%;
     background-color: white;
     transition: background-color 0.3s ease-in-out;
-}
+} */
 
 div.social-media a:hover{
-    background-color: #333;
+    background-color: #b81c1c;
+    cursor: pointer; 
 }
 
 .slideshow-container {
@@ -317,3 +281,71 @@ div.social-media a:hover{
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+  
+  .glow {
+    animation: glow 1.5s ease-in-out infinite alternate;
+    font-size: 6em;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    }
+    to {
+      text-shadow: 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900;
+    }
+  }
+
+  .content-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin: 5px 0;
+    gap:5px;
+    line-height: 1.1;
+  }
+  
+  .offcanvas-body img:hover{
+    transform: scale(1.1);
+    }
+  
+    .content-wrapper img:hover{
+        transform: scale(1.1);
+    }
+
+    #txtlogo{
+        font-family:"Bradley Hand ITC", "Helvetica Neue", Helvetica;
+        font-size: 3em;
+        color: white;
+        text-shadow: 0px 0px 5px cyan, 0px 0px 10px #00ffff, 0px 0px 20px cyan, 0px 0px 80px cyan;
+    }
+
+    #txtlogo1{
+        font-family:"Bradley Hand ITC", "Helvetica Neue", Helvetica;
+        font-size: 3em;
+        color: white;
+        text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000, 0px 0px 20px #ff0000, 0px 0px 80px#ff0000;
+    }
+
+    .quiz-container {
+        background-color: #2a2a2a;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .question {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    #result {
+        margin-top: 20px;
+        font-size: 18px;
+    }
